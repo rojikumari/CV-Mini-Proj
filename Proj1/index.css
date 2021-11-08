@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Antique Soft', serif;
+}
+body{
+    background-color: #9378a0;
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #ffffff ;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.6);
+}
+.container .left_side{
+    position: relative;
+    background: #2a1a3f;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(159, 145, 163, 0.6);
+}
+.profileText .imgbx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight:300;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px ;
+    columns: rgba(99, 39, 134, 0.527);
+}
+.contactInfo ul li span{
+    color: white;
+    font-weight: 300;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5{
+    color: rgb(181, 137, 207);
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2){
+    color: white;
+    font-weight: 500;
+}
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background : rgb(15, 6, 22);
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(132, 127, 134);
+}
+.container .right_side{
+    position: relative;
+    background: #e3d3eb;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: rgb(27, 14, 41);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    /* font-family: 'Concert One', cursive; */
+    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Frank Ruhl Libre', serif; */
+    font-weight: 500;
+    color: rgb(40, 19, 59);
+}
+strong{
+    font-family: 'Barlow', sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(40, 19, 59);
+}
+.skills .box{
+   
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center; 
+}
+.skills .box h4{
+    /* font-family: 'Frank Ruhl Libre', serif; */
+    font-family: 'Concert One', cursive;
+    text-transform: uppercase;
+    color: rgb(39, 14, 59);
+    font-weight: 150;
+    font-size: 18px;
+    padding: 5px;
+}
+.skills .box  .percent{
+
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(185, 171, 194);
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(41, 14, 59);
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.interest ul li{
+    list-style: none;
+    color: rgb(36, 19, 59);
+    font-weight: 500;
+    margin: 3px 0;
+}
+.interest ul li .fa{
+    color: rgb(40, 19, 59);
+    font-size: 18px;
+    padding: 8px;
+}
+.projects ol{
+    padding-left: 18px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.projects ol li{
+    color: rgb(43, 19, 59);
+    font-weight: 500;
+    margin: 3px 0;
+}
+.projects ol li .pro{
+    color: rgb(40, 19, 59);
+    font-size: 18px;
+    padding: 6px;
+}
+.experience ul{
+    padding-left: 18px;
+}
+.experience ul li{
+    color: rgb(40, 19, 59);
+    font-weight: 500;
+    margin: 3px 0;
+}
+.experience ul li .exper{
+    color: rgb(40, 19, 59);
+    font-size: 10px;
+    padding: 6px;
+}
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px){
+    .about .box{
+        flex-direction: column;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .projects ol{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+@media (max-width: 345px){
+    .contactInfo{
+        grid-template-columns: repeat(1,1fr);
+        font-size: 12px;
+    }
+}
